@@ -1,0 +1,130 @@
+
+/********** Base styles **********/
+*{ 
+    box-sizing: border-box;
+    margin: 30px;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+
+h1 { 
+    text-align: center;
+}
+
+head {
+    margin-top: 50px;
+}
+
+p {
+    width: fit-content;
+    height: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+}
+body {
+    background-color: #d2691e;
+
+}
+#box1 {
+    background-color: #deb887;
+    width: fit-content;
+    height: fit-content;
+    float: left;
+    border: 2px solid black;
+    position: relative;
+
+}
+
+#content { 
+    text-align: justify;
+    position: relative;
+}
+
+#box2 {
+    background-color: #deb887;
+    width: auto;
+    height: fit-content;
+    float: left; 
+    border: 2px solid black;
+    position: relative;
+}
+
+#box3 {
+    background-color: #deb887;
+    width: auto;
+    height: fit-content;
+    float: left;
+    border: 2px solid black;
+    position: relative;
+} 
+
+.subtitles {
+    background-color:  #8b0000 ;
+    border: 2px solid black;
+    float:  right;
+    clear: both;
+    width: fit-content;
+    height: fit-content; 
+    margin-top: 0%;
+    margin-right: 0%;
+
+} 
+/* Simple Responsive Framework. */
+.row {
+    width: 100%; 
+}   
+  /********** Large devices only **********/
+    @media (min-width: 992px) {
+    .col-lg-1, .col-lg-2, .col-lg-3,  {
+        float: left:      }
+    #box1 {
+        width: 100%; 
+    }
+    #box2 { 
+        width: 100%; 
+    }
+    #box3 {
+        width: 100%; 
+    }   
+
+    .col-lg-1 {
+        width: 25%;
+        float: left;
+    }
+    .col-lg-2 {
+        width: 25%;
+        float: left;
+    }
+    .col-lg-3 {
+        width: 25%;
+        float: left;
+    } 
+    }
+  /********** Medium devices only **********/
+    @media (min-width: 767px) and (max-width: 991px) {
+    #box1 {
+        width: 100%; 
+    }
+    #box2 {
+        width: 100%; 
+    }
+    #box3 {
+        width: 100%; 
+    } 
+    }
+    @media (min-width: 767px) and (max-width: 991px) {
+    .col-md-1, .col-md-2, .col-md-3 { 
+    
+    float: left; 
+    width: auto; 
+    }
+    .col-md-1 {
+        width: 40%;
+    }
+    .col-md-2 {
+        width: 40%;
+    }
+    .col-md-3 {
+        width: 87%;
+    } 
+    } 

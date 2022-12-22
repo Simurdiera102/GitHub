@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--This file is informative and contains information about troubleshooting issues that arise during the course, as well as some steps and recommendations on how to perform some actions in git bashy vscode. 
+    course: HTML, CSS and Javascript for developers, it also gives some steps and recommendations on how to perform some actions in git bash and vscode. --> 
+<head>  
+    <meta charset="utf-8">
+    <title> Anotaciones </title>
+    <link rel="stylesheet" href="Style.css"> 
+    <style>
+        *{    
+        box-sizing: border-box;
+        }     
+        body {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            text-align: justify;
+            margin-left: 30px ;
+            padding: 0% ; 
+            background-color: #f5f5dc;
+            width: 1300px; 
+        }
+        h4 {
+            font-family: "Trebuchet MS", Helvetica, sans-serif;
+            color: #0000ff;
+            font-weight: bold;
+        }
+    </style> 
+</head>
+
+<div>
+<body>
+    </div>
+    <h1 class="highlight" id="Top">Notas del curso</h1>
+    <section>
+        <ol>
+            <!--Contenido de la pagina y sus hiperlinks-->
+            <li><a href="#section1">Problemas de acceso</a></li>
+            <li><a href="#section2">Anotaciones</a></li> 
+        </ol>
+    </section>
+    
+    <ol>
+    <section id="section1">
+        <li><h2>Solucion de problemas</h2></li>
+        <ul>
+            <li><h3>Problemas de acceso y credenciales</h3></li>    
+        <p id="p1">Si aparecen errores de credenciales se deben reescribir estas credenciales desde su ordenador siguiendo  <br>
+        la ruta &lt;Windows 10&gt;: Busqueda/AdministradorDeCredenciales/CredencialesDeWindows y alli eliminan la    <br>
+        credencial existente. <br>
+        Ahora se procede con escribir nuevamente en la terminal git bash el comando "git push", alli nuevamente <br> 
+        se le pedira al usuario que ingrese sus nuevas credenciales de Github.  <br>
+        </p> 
+            <li><h3>Cambio de informacion del usuario</h3></li> 
+        <p id="p2">
+        Se debe iniciar con verificar la informacion actual del usuario con el comando: "git config --status"  <br>
+        </p>
+        </ul>
+    </section>    
+    
+    <section id="section2" > 
+        <li><h2>Anotaciones</h2></li>
+        <ul>
+        <li><h3>CSS</h3></li> 
+        <ol>
+            <li><h4>Sintaxis basica de CSS:</h4></li>
+            <ul>
+                <li>Selector</li>
+                <li>Declaracion</li>
+                <li>Propiedad/Valor</li>
+            </ul>
+            <p class="Ejemplo" style="font-style: italic;">Ejemplo:</p> 
+                <ul>
+                    <li>   
+                        1 &nbsp;   p { <br>
+                        2  &nbsp;color: blue; <br>
+                        3  &nbsp;font-size: 20px; <br>
+                        4  &nbsp;width: 200px; <br>
+                        5  &nbsp;} 
+                    </li>
+            </ul>
+            <li><h4 >Pseudo selectors</h4></li>
+            <ul>
+                <li>:link</li>
+                <li>:visited</li>
+                <li>:hover</li>
+                <li>:active</li>
+                <li>:nth_child(...)</li>
+            </ul>
+            <div id="columnas1">
+            <li><h4>Inheritance</h4></li>
+            <img id="imagen1" src="Inheritance.png" width="400px" />
+            
+            <li><h4>Specificity</h4></li>
+            <p id="p3">Es conveniente ser optimos a la hora de escribir un codigo, por tal razon se debe escoger <br>
+            la combinacion que menos &quot;puntaje&quot; arroje al realizarle esta prueba:</p>
+            <img  id="imagen2" src="score.png" width="400px"/>  
+            </div>
+            
+            <li><h4 style="font-style: italic;">font-family</h4></li>
+            <p id="p4">Para obtener las diferentes combinaciones de fuente de texto, se puede visitar la pagina: <br>
+            <a href="http://www.w3schools.com/cssref/css_websafe_fonts.asp">http://www.w3schools.com/cssref/css_websafe_fonts.asp</a>  
+            
+            <li><h4>The box model</h4></li> 
+        </p>
+        </ol> 
+        </ul>
+    </section>
+</ol>
+
+<!--Regresar al inicio-->
+<div>
+    <p class="inicio">
+        Regresar al  <a href="#Top">inicio</a>
+    </p>
+</div>
+</body>
+</html>
